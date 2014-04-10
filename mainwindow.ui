@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>718</width>
+    <height>535</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Galaxy-Swiss Bourdin</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="mesImages.qrc">
+    <normaloff>:/images/leLogo</normaloff>:/images/leLogo</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+background-color:rgb(123, 202, 255)
+}
+
+QTabWidget{
+background:transparent;
+}</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextBesideIcon</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+</string>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="icon">
+          <iconset resource="mesImages.qrc">
+           <normaloff>:/images/icone.jpg</normaloff>:/images/icone.jpg</iconset>
+         </attribute>
+         <attribute name="title">
+          <string>&amp;Médicaments</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>Famille :</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="comboBoxFamilleMain">
+                <property name="styleSheet">
+                 <string notr="true">border-width:1px;
+border-color: rgb(21, 165, 255);
+border-style:inset;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <widget class="QListWidget" name="listWidgetMedicament">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="palette">
+             <palette>
+              <active/>
+              <inactive/>
+              <disabled/>
+             </palette>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-width:1px;
+border-color: rgb(21, 165, 255);
+border-style:inset;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QPushButton" name="pushButtonAjoutMedicament">
+              <property name="styleSheet">
+               <string notr="true">border-width:1px;
+border-color: rgb(21, 165, 255);
+border-style:outset;</string>
+              </property>
+              <property name="text">
+               <string>&amp;Ajouter</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonModifMedicament">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border-width:1px;
+border-color: rgb(21, 165, 255);
+border-style:outset;</string>
+              </property>
+              <property name="text">
+               <string>&amp;Modifier</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonSuppMedicament">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border-width:1px;
+border-color: rgb(21, 165, 255);
+border-style:outset;</string>
+              </property>
+              <property name="text">
+               <string>&amp;Supprimer</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="icon">
+          <iconset resource="mesImages.qrc">
+           <normaloff>:/images/icone2.png</normaloff>:/images/icone2.png</iconset>
+         </attribute>
+         <attribute name="title">
+          <string>&amp;Praticiens</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QLabel" name="label_4">
+                <property name="text">
+                 <string>Ville :</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="comboBoxVille">
+                <property name="styleSheet">
+                 <string notr="true">border-width:1px;
+border-color: rgb(21, 165, 255);
+border-style:inset;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <item>
+               <widget class="QLabel" name="label">
+                <property name="text">
+                 <string>Type de praticien :</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="comboBoxType">
+                <property name="styleSheet">
+                 <string notr="true">border-width:1px;
+border-color: rgb(21, 165, 255);
+border-style:inset;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <widget class="QListWidget" name="listWidgetPraticien">
+            <property name="styleSheet">
+             <string notr="true">border-width:1px;
+border-color: rgb(21, 165, 255);
+border-style:inset;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QPushButton" name="pushButtonAjoutPraticien">
+              <property name="styleSheet">
+               <string notr="true">border-width:1px;
+border-color: rgb(21, 165, 255);
+border-style:outset;</string>
+              </property>
+              <property name="text">
+               <string>&amp;Ajouter</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonModifPraticien">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border-width:1px;
+border-color: rgb(21, 165, 255);
+border-style:outset;</string>
+              </property>
+              <property name="text">
+               <string>&amp;Modifier</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonSuppPraticien">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border-width:1px;
+border-color: rgb(21, 165, 255);
+border-style:outset;</string>
+              </property>
+              <property name="text">
+               <string>&amp;Supprimer</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="icon">
+          <iconset resource="mesImages.qrc">
+           <normaloff>:/images/icone3.jpg</normaloff>:/images/icone3.jpg</iconset>
+         </attribute>
+         <attribute name="title">
+          <string>&amp;Visiteurs</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>Ville :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBoxVille2">
+              <property name="styleSheet">
+               <string notr="true">border-width:1px;
+border-color: rgb(21, 165, 255);
+border-style:inset;</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <widget class="QListWidget" name="listWidgetVisiteur">
+            <property name="styleSheet">
+             <string notr="true">border-width:1px;
+border-color: rgb(21, 165, 255);
+border-style:inset;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QPushButton" name="pushButtonAjoutVisiteur">
+              <property name="styleSheet">
+               <string notr="true">border-width:1px;
+border-color: rgb(21, 165, 255);
+border-style:outset;</string>
+              </property>
+              <property name="text">
+               <string>&amp;Ajouter</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonModifVisiteur">
+              <property name="styleSheet">
+               <string notr="true">border-width:1px;
+border-color: rgb(21, 165, 255);
+border-style:outset;</string>
+              </property>
+              <property name="text">
+               <string>&amp;Modifier</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButtonSuppVisiteur">
+              <property name="styleSheet">
+               <string notr="true">border-width:1px;
+border-color: rgb(21, 165, 255);
+border-style:outset;</string>
+              </property>
+              <property name="text">
+               <string>&amp;Supprimer</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>718</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Fichier">
+    <property name="title">
+     <string>&amp;Fichier</string>
+    </property>
+    <addaction name="action_Changer_d_utilisateur"/>
+    <addaction name="action_Quitter"/>
+   </widget>
+   <addaction name="menu_Fichier"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_Quitter">
+   <property name="text">
+    <string>&amp;Quitter</string>
+   </property>
+  </action>
+  <action name="action_Changer_d_utilisateur">
+   <property name="text">
+    <string>&amp;Changer d'utilisateur...</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mesImages.qrc"/>
+ </resources>
+ <connections/>
+</ui>
